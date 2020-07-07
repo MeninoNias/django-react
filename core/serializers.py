@@ -6,7 +6,7 @@ class ItemSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Item
-        fields = ['url', 'name', 'list', 'done']
+        fields = ['id' ,'url', 'name', 'list', 'done']
 
 class ListSerializer(serializers.HyperlinkedModelSerializer):
 
@@ -14,4 +14,4 @@ class ListSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = List
-        fields = ['url', 'name', 'owner', 'item_set']
+        fields = ['id' ,'url', 'name', 'owner', 'item_set']
